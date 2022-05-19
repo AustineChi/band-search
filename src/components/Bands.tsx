@@ -15,8 +15,7 @@ const Bands = () => {
   async function handleSearch(searchTerm: string) {
     try {
       if (searchTerm) {
-        setListData(defaultList);
-        setSearchResults([]);
+        // setListData(defaultList);
         const response = await axios(
           `https://itunes.apple.com/search?term=${searchTerm}`
         );
